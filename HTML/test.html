@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-DZ;"> 
+   <head> 
+    <title > 
+        MY FIRST PAGE
+    </title>
+   <!--favicon (icon of the website)
+u can create ones in favicon.cc : -->
+    <link rel="icon" href="/images/téléchargement.jfif">
+    <link rel="stylesheet" href="/style.css">
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+    
+    <meta name="keywords" content="keywords for search engines">
+    <meta name="author" content="author">
+    <meta name="description" content="desciprtion about the page">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width,intitial-scale=1.0">
+
+
+    
+    
+        <!--link to a css file method <link rel="stylesheet" href="styles.css">-->
+   </head>
+    <body>     <!--barre de navigation-->   
+        
+      <ul>
+        <li><a href="https://www.youtube.com/">Youtube</a> </li>
+         <li><a href="https://www.netflix.com/dz-fr/">netflix</a></li>
+         <li><a href="https://www.twitch.tv/">Twitch</a></li>
+      </ul>
+      
+        <!--make a link : -->
+        <!--target to set where open the file
+        _self : default 
+        _blank : opens document in new window
+        _parent : opens in parent frame 
+        mailto: : in href to create link that opens email to send to someone
+        a:link{} : to modifiy unvisited site
+        a:visited{} : to modify visited site
+        a:hover{} : to modiffy when mouse go to link
+        a:active{} : to modifiy when link is active
+        -->
+        <br>
+        <br>
+        <a href="https://www.w3schools.com/html/" target="_blank">Visit our HTML tutorial</a>
+        <br>
+        <br>
+        <a href="#bookmark">link to bookmark</a>
+
+        <!--style : (color and size )--> 
+      <p style="color:red;">I am red</p>
+      <p style="color:rgba(60,0,214,0.9)">im transparent</p>
+      <p style="color:#ff6347;">I am orange</p>
+      <p style="font-size:50px;">I am big</p>
+      <p style="font-size:200%;">200% font size</p>
+        <!--border color and padding and margin
+        padding : distance between text inside and border
+        margin : space outside the border -->
+      <p style="border:2px solid tomato;padding: 10px; margin: 50px;">border colored</p>
+
+        <!--background :-->
+      <p style="background-color: aquamarine;">background changed </p>
+
+         <!--font-family-->
+      <p style="font-family: 'Courier New', Courier, monospace;">font-family test</p>
+      <p style="font-family: verdana;">verdana style</p>
+
+        <!--text align : -->
+
+      <h3 style="text-align:center;">text aligned in center</h3>
+      <h3 style="text-align: end;">text aligned in end</h3>
+
+
+      
+
+
+         <!--image syntax : -->
+        <div class="rel">
+      <img  style="opacity: 1;width: 100%;height: 100%;" src="images/harrypotter.jfif" alt="a picture of harry potter" width="144" height="200">
+        <div class="img">siu</div>
+        </div>
+         <!--horizontal line and line break -->
+         
+      <hr>
+      <br>
+
+        <!--bre tag preserves both spaces and line breaks -->
+      <pre>this preserves both       spaces and 
+        line breaks
+      </pre>
+        <!--text formatting-->
+     <pre>
+      <b>Bold text</b>
+      <strong>important text</strong>
+      <i>italic text</i>
+      <mark>marked test</mark>
+      <small>smaller text</small>
+      <ins>inserted text</ins>
+      d<sub>subscript text</sub>
+      d<sup>supscript text</sup>
+      <del>deleted text</del>
+    </pre>
+
+     <!--Quotation and Citation-->
+    <pre>
+    <blockquote cite="http://www.google.com">for quoted text</blockquote>
+    <q>short quotation</q>
+    <p><abbr title="Ecole national superieure en intelligence artificielle">ENSIA</abbr> opened in 2021</p>
+      <address>
+Written by John Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+<p><cite>tout seul</cite> by Squeezie</p>
+<bdo dir="rtl">this text will be written from right to left</bdo>
+</pre>
+
+   <!--BOOKMARK-->
+   <h2 id="bookmark">bookmark location</h2>
+
+   <!--image maps-->
+   <div style="text-align: center;">
+
+   <img  src="/images/workplace.jpg" alt="workplace" usemap="#workmap">
+   <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" href="https://en.wikipedia.org/wiki/Computer" target="_blank">
+    <area shape="circle" coords="337,300,44" href="https://en.wikipedia.org/wiki/Coffee" target="_blank">
+   </map>
+
+    </div>
+
+    <!--Background image
+    background-attachment:fixed : background will cover entire element and image will keep proportions
+  If you want the background image to stretch to fit the entire element, you can set the background-size property to 100% 100%:-->
+    <p  style="background-repeat: no-repeat;text-align: center;background-image: url(/images/background.jfif); color: green;background-size: cover;" >background</p>
+
+    <!--picture attribute
+    if screen more than 650px theb img1, if screen more than 465px but less than 60px then img2 ect-->
+    <picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+
+<!--tables :
+nth-child(even)to style every other row element-->
+<table style="width:100%">
+
+  <caption>caption of the table</caption>
+
+  <colgroup>
+    <col span="2" style="background-color: red">
+  </colgroup>
+  <tr style="height: 100px;">
+    <th style="width: 90px;">name</th>
+    <th rowspan="2">age</th>
+    <th>gender</th>
+  </tr>
+  <tr>
+    <td style="width: 80px;">noah</td>
+    <td colspan="2">19 M</td>
+  </tr>
+
+</table>
+
+<!--lists  : -->
+  <!--unordered list-->
+  <h3>unorderedlist</h3>
+<ul style="list-style-type: square;">
+  <li>pedri</li>
+  <li>yamal</li>
+  <li>raphinha</li>
+</ul>
+
+<!--ordered list-->
+<h3>Ordered list</h3>
+<ol>
+  <li>yamal</li>
+  <li>dembele</li>
+  <li>raphinha</li>
+</ol>
+
+<!--description list :-->
+<h3>description list </h3>
+<dl>
+  <dt>yamal</dt>
+  <dd>-the ballon d'or winner</dd>
+  <dt>dembele</dt>
+  <dd>-2nd place</dd>
+</dl>
+
+<!--span -->
+<p>i have <span style="color:green;background-color: blueviolet;">green eyes</span> and dark hair</p>
+<!--div techniques to make side by side divs : 
+float:left;
+display: inline-block;
+display:flex;
+display: grid;
+grid-template-columns: 33% 33% 33%;-->
+
+
+<!--classes :-->
+<div class="player">
+  <pre>
+    Lamine yamal
+    17yo
+    Fc Barcelona
+  </pre>
+</div>
+<div class="player">
+  raphinha
+  25yo
+  Fc barcelona
+</div>
+
+<!--id : -->
+<h3 id="unique"> id</h3>
+
+<!--iframes : -->
+<iframe name="iframe" src="iframe.html" width="300" height="200" title="iframe"></iframe>
+
+<a href="https://www.youtube.com/" target="iframe">youtube</a>
+
+<!--javascript : -->
+<p id="demo">the p part </p>
+<script>
+  document.getElementById("demo").innerHTML += "+ the scirpt part";
+  document.getElementById("demo").style.color ="purple";
+</script>
+<script>
+  function messi(s){
+    var pic;
+    if(s == 1){
+      pic = "/images/happy.jfif"
+    }
+    else{
+      pic = "/images/sad.jfif"
+    }
+    document.getElementById('image').src = pic
+  }
+</script>
+<img id="image" src="/images/sad.jfif" width="180" height="180">
+<p >
+  <button type="button" onclick="messi(0)">Sad messi</button>
+  <button type="button" onclick="messi(1)">Happy messi</button>
+</p>
+
+<!--html computer code elements : -->
+<code>
+x = 5;
+y = 6;
+z = x + y;
+</code>
+<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+<p>Message from my computer:</p>
+<p><samp>File not found.<br>Press F1 to continue</samp></p>
+<var>var : italic</var>
+
+<!--Semantic : 
+<article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<aside>
+-->
+  <!--entity name and number -->
+  <p> less than : &lt or &#60</p>
+  <p>euro sign : &euro;</p>
+  <p>differential : &part; </p>
+  <p>Emojies : &#128511; or &#128514;</p>
+    
+
+
+  <!--form : -->
+<h2>Forms : </h2>
+<!--text form-->
+<form action="/action_page.php" autocomplete="off">
+  <label for="name" >Name : </label>
+  <input type="text" id="name" name="name">
+  <input type="submit" value="Submit">
+</form>
+
+<!--radio-->
+<form>
+  <input type="radio" id="html" name="language" value="HTML">
+  <label for="html" >HTML</label><br>
+  <input type="radio"id="java" name="language" value="JAVA">
+  <label for="java">JAVA</label><br>
+  <input type="radio"id="css" name="language" value="CSS">
+  <label for="css" >CSS</label>
+  <input type="submit" value="Submit">
+</form>
+
+<!--chechboxes-->
+
+<form>
+  <fieldset>
+    <legend>choice</legend>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+  <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<!--select element-->
+<form>
+  <label for="country">choose a country</label>
+  <select id="country" name="country" >
+    <option value="Algeria">Algeria</option>
+    <option value="America" selected>America</option>
+    <option value="Canada">Canada</option>
+
+  </select>
+    <input type="submit" value="Submit">
+</form>
+
+<!--multi line area-->
+<form>
+  <textarea name="message" rows="5" cols="30"></textarea><br>
+  <input type="submit" value="envoyer message">
+</form>
+
+<form action="/action_page.php">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form>
+
+<h3>borders :</h3>
+<br>
+<p class="one">border</p>
+
+<div class="test">
+  <p>hello</p>
+</div>
+
+<h3>text decoration :</h3>
+<p class="b">decorated text</p>
+
+    
+
+    <h3>font fallbacks : </h3>
+
+    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> sans serif : clean lines (modern and minimalistic)</p><br>
+    <p style="font-family: 'Courier New', Courier, monospace;">monospace : mechanical look</p><br>
+    <p style="font-family:'Times New Roman', Times, serif;">serif : small stroke at the edges ( elegance)</p><br>
+    <p style="font-family:cursive">cursive : human handwriting</p><br>
+    <p style="font-family:fantasy">fantasy : decorative,playful</p><br>
+    <p style="font-style: italic;">italic (font-style)</p><br>
+    <!--shorthand font : (style,variant,weight,size,family)-->
+    <p style="font: normal bold 10px Georgia, serif">font shorthand</p>
+
+
+    <!--icons : -->
+    <i class="fas fa-cloud"></i>
+    <i class="fa-solid fa-house" style="color:red;font-size: 100px;"></i>
+
+    <!--positions :-->
+
+    <div class="rel">
+      relative 
+    </div>
+
+    <div class="fixed">fixed</div>
+    <div class="sticky">sticky</div>
+
+    <!--z-index-->
+    <img class="a" src="/images/messi.jfif">
+
+    <!--pseudo classes,elements-->
+    <p class="before selection" >before the text, a messi image is inserted</p>
+
+
+    <!--dropdowns :-->
+    <h3>drop downs</h3>
+    <div class="dropdown">mouse over me to see content
+      <div class="drop_content">now you see the content</div>
+    </div>
+
+    <!--selector attribute
+    
+    |= : same value or value followed by - 
+    ^= : start with value
+    $= : ends with specific value
+    *= : contains specific value-->
+    <p title="yellow">attribute selector</p>
+
+
+    <!--counters : -->
+    <h3>first h3</h3>
+    <h4>first h4</h4>
+    <h4>second h4</h4>
+    <h4>third h4</h4>
+    <h3>second h3</h3>
+    <h4>first h4</h4>
+    <h4>second h4</h4>  
+    
+  </body>
+</html>

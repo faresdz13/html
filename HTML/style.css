@@ -1,0 +1,229 @@
+/* body {background-color:blue}
+     h1 {color:red} */
+     /* make a link as a button : */
+     a:link { border: 2px solid red;
+      background-color: green;
+      padding: 5px;
+      
+    }
+   
+    a:hover{
+
+    /* table styling : */
+    background-color: blue;}
+    tr:hover{
+      background-color: blue;
+  }
+    td,th{
+      text-align: center;
+      border: 2px solid red;
+      padding-top: 3px;
+      padding-left:5px;
+      padding-bottom:8px;
+      
+      border-radius: 10px;
+    
+    }
+    table{
+    border-spacing: 5px;}
+    tr:nth-child(odd){
+    
+    background-color: blueviolet;
+    border-bottom:green;}
+    th:nth-child(even){
+    color:orange}
+
+    /* list : */
+    ul{
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+       width: 100%;
+       list-style-type: none;
+        
+}
+    li {
+    float:left;
+    width: 200px;
+    text-align: center;}
+    
+    li a{ 
+     display: block;        
+     
+     color: white;
+    text-decoration: none;}
+    li a:hover{
+    background-color: rgb(28, 3, 75);}
+
+      /*class : */
+    .player{
+    border: 3px solid rgb(128, 59, 212);
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    width: 300px;
+    margin: auto;}
+
+    /* id : */
+    #unique{
+    color: cadetblue;}
+
+    
+    .one{
+      /* border */
+    border-style: solid;
+    border-width: 15px 10px thick 2px;
+    border-color: red green blue purple;
+  border-radius: 10px;
+    /*margin */
+    margin: auto;
+    /*paddin */
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    /*outline */
+    outline: 5px solid purple;
+    outline-offset: 2px;
+      }
+
+  .test{
+     background-color: red;
+     color: black;}
+  .test > p{
+     color:green}
+
+     /* text align */
+    p.a{
+      text-align-last: center /* last line of text */;
+      direction: rtl /* right to left */;
+      vertical-align:text-top /* text bottom, sub, super*/ ;}
+
+    /* text decoration */
+
+    p.b{
+      text-decoration: overline underline ;
+      text-decoration-color: blue;
+      text-decoration-style:dotted ;
+      text-decoration-thickness: auto;
+      /* or text-decoration: underline red double 5px*/
+      /* text transformation : */
+      text-transform: uppercase;}
+
+    /* Text spacing */
+    p.c{
+      text-indent: 30px /*space before first line*/;
+      letter-spacing: 1px; /* space between letters*/
+      line-height: 1px; /* space between lines*/
+      word-spacing: 1px; /* space between words*/
+  }
+
+  /* text shadow : */
+  p.d{
+    text-shadow: 2px 2px 5px red;}
+
+  /* positions  : 
+  static : according to normal flow of the page
+  absolute : neareset positioned ancestor
+  */
+  div.rel{
+    border: 2px solid blue;
+    position: relative;
+    left: 30px;}
+
+  div.fixed{
+      border:1px solid purple;
+      position: fixed;
+      right: 0;
+      top: 0;}
+  
+  div.sticky{
+    border:1px solid black;
+    position: sticky;
+    top:0;}
+
+  div.img{
+    position: absolute;
+    
+    background-color: white;
+    left: 100px;
+    top: 2px;}
+  
+  /* z-index*/
+  img.a {
+  position: absolute;
+  left: 200px;
+  top: 50px;
+  z-index: -1; /*image will be placed before text */
+}
+
+  /*overflow */
+  div.overflow{
+   height: 50px;
+   overflow: auto;
+  }
+
+  /*clear (element after floated element)*/
+   div.clear{
+    clear:both;}
+
+    /* combiantors */
+    div section{
+    background-color: blue;} /*select all sections inside div
+    div  */
+    div > header{
+    font-size:30px} /* select only direct children header of div */
+     div + section{
+    font-family: 'Courier New', Courier, monospace;} /*select sections that are directly aftera div */
+    div ~ header{
+    color:yellow}/* select all headers after a div */
+
+
+    /* post classes */
+    a.someclass:hover{
+    background-color: pink;} /*select links that are under the class */
+
+    p:first-child{
+    font-size: 1px;} /*select first paragraph of each parent */
+
+    /* pseudo elements*/
+    p::first-line{
+    color: red;}
+    p.before::before{
+    content: url(/images/messi.jfif)}
+    p.selection::selection{
+    background-color: yellow;}
+
+    /* dropdowns */
+    .dropdown{
+    position:relative;
+    }
+    .dropdown .drop_content{
+    display: none;
+    position: absolute;
+    left: 50px;}
+    .dropdown:hover .drop_content  {
+    display: block;}
+
+    /*attribute selector*/
+
+    p[title="yellow"]{
+    background-color: yellow;}
+
+    /*Counters*/
+
+  body{
+  counter-reset: h3_counter;}
+
+  h3{
+  counter-reset: h4_counter;}
+  h4::before{
+  counter-increment: h4_counter;
+  content: "section "counter(h4_counter) " : " ;}
+
+
+    
+    
+  
+    
+    
