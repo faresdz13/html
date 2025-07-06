@@ -220,6 +220,93 @@
   h4::before{
   counter-increment: h4_counter;
   content: "section "counter(h4_counter) " : " ;}
+/*border image*/
+  .borderimg{
+    border: 5px solid transparent;
+    padding: 15px;
+    border-image: url("/images/border.jpg") 30 stretch;
+  }
+
+  /*gradients*/
+  #gradient{
+    background-image: linear-gradient(to bottom right,red,yellow);
+    width: 100%;
+    height: 100px; 
+  }
+  #gradient2{
+    background-image: linear-gradient(to right,rgba(128,0,128,0),rgba(128,0,128,1));
+    height: 100px;
+  }
+
+  /* radial gradient */
+  #radial{
+    background-image: radial-gradient(red 20% , purple 60%,blue 100%);
+    height: 100px;
+    
+  }
+  #radial2{
+    height: 100px;
+    background-image: radial-gradient(closest-side at 70% 20%,red,purple);
+  }
+
+  /*conic gradient */
+  #conic{
+    background-image: conic-gradient(red 90deg,yellow 45deg,green ) ;
+    height: 100px;
+  }
+  /* shadows*/
+  #shadow{
+    text-shadow: 2px 2px 5px red;
+
+  }
+  /*box shadow*/
+  div.fares{
+    margin: 50px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 6px 8px 0 black;
+    box-sizing:border-box;
+
+  }
+  div.mid{
+    box-sizing:border-box;
+    padding-top: 100px;
+    text-shadow: 1px 1px 5px black;
+    font-size:100px;
+    text-align: center;
+    width: 250px;
+    height: 200px;
+    color: white;
+    background-color: green;
+    
+  }
+  div.down{
+    box-sizing:border-box;
+    padding-top: 25px;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+  }
+
+  /*text effects :
+  text-overflow, 
+  word-wrap: break word, to be able to broken and wrap onto next line.
+  word-break: keep-all ( break at hypens - )
+  word-break: break-all ( breaks at any haracter) 
+  writiing-mode (horizontal-tb, vertical-lr) : whether lines are laid horizontally or vertically*/
+  
+
+  /* 2D transformation */
+  div.translate{
+    border: 2px solid black;
+    background-color: red;
+    width:35%;
+    height: 200px;
+
+  }
+  div.translate:hover{
+    transform: translate(50px,100px);
+  }
 
 
     
