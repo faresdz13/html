@@ -307,6 +307,76 @@
   div.translate:hover{
     transform: translate(50px,100px);
   }
+ div.rotate:hover{
+   height: 200px;
+   width: 35%;
+   background-color:purple;
+   transform: rotate(180deg);}
+
+  div.scale:hover{
+    transform: scale(0.5,0.5);}
+
+  div.skewX:hover{
+  transform:  skewX(20deg)}
+
+  div.matrix:hover{
+  transform: matrix(1,-0.3,0,1,0,0);}/*scaleX skewY skewX scale Y translateX translateY */
+
+  /* 3D transforms */
+  div.scaleX:hover{
+  transform: rotateX(150deg);}
+
+  /*transitions */
+  div.transition{
+    text-align: center;
+    background-color: purple;
+    width:100px ;
+    height: 100px;
+    transition: width 2s,height 3s, background 2s;}
+  div.transition:hover{
+    width: 100%;
+    transition-timing-function: ease-in;
+    /*ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+linear - specifies a transition effect with the same speed from start to end
+ease-in - specifies a transition effect with a slow start
+ease-out - specifies a transition effect with a slow end
+ease-in-out - specifies a transition effect with a slow start and end*/
+    transition-delay: 1s;
+    }
+
+  div.transition_transform{
+    margin: 10px;
+    border: 2px solid black;
+    background-color: red;
+    width:35%;
+    transition: transform 3s;
+    height: 100px;}
+  div.transition_transform:hover{
+    transform: rotate(90deg);}
+  
+  div.background:hover{
+    background-color: green;}
+
+    /* Animations : */
+
+    @keyframes example{
+    0%{left: 0px;top: 0px;}
+    25% {background-color: purple;left: 25px;top: 25px;}
+    50%{background-color: green;left: 50px;top: 50px;}
+    100%{background-color: yellow;left: 100px;top: 100px;}
+    }
+    div.anim{
+    position: relative;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+    animation-fill-mode: both;} /* animation: example 5s linear 2s infinite alternate; shorthand /*
+
 
 
     
