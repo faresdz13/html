@@ -377,8 +377,100 @@ ease-in-out - specifies a transition effect with a slow start and end*/
     animation-direction: alternate;
     animation-fill-mode: both;} /* animation: example 5s linear 2s infinite alternate; shorthand /*
 
+ /*toolips*/
+
+    .toolip {
+      position: relative;
+      display: inline-block;
+      
+    }
+    .toolip .text{
+      transition: opacity  1s;
+      opacity: 0;
+      position: absolute;
+      bottom:120%;
+      left:0;
+      width:100%;
+      border: 1px solid black;
+      background-color: black;
+      padding: 2px;
+      color: white;
+    }
+    .toolip:hover .text{
+      opacity: 1;
+      
+    }
+    .toolip .text::after{
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 45%;
+      border-width: 5px;
+      border-style: solid;
+      border-color: black transparent transparent transparent;
+    }
+
+    /*image transition*/
+    div.imganim img{
+      width: 100%;
+      height: auto;
+}
+  div.imganim{
+    position: relative;
+     }
+
+  .overlay{
+    transition: 1s ease;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  div.imganim:hover .overlay{
+    opacity: 1;
+  }
+  
+  .animtext{
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+      
+  }
+
+  /*image filters : filter: 
+  blur()
+brightness()
+contrast()
+drop-shadow()
+grayscale()
+hue-rotate()
+invert()
+opacity()
+saturate()
+sepia()  */
+
+/*image shapes: 
+clip-path: circle(50% at right)
+shape-outside: circle(50%)
+clip-path: ellipse(50% 35% at right)
+ polygon : */
+ #imgP{
+  clip-path: polygon(50% 0%,100% 50%, 50% 100%,0% 50%);
+  width: 50%;
+  
+ }
 
 
+
+
+    
+  
     
     
   
