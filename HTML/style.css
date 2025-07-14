@@ -465,6 +465,106 @@ clip-path: ellipse(50% 35% at right)
   width: 50%;
   
  }
+/* mask image */
+  .mask {
+    
+  -webkit-mask-image: url(/images/apple.avif);
+   mask-image: url(/images/apple.avif);
+    mask-repeat: no-repeat;
+  }
+
+  div.button{
+    display: flex;
+    justify-content: center;
+  }
+  div.button a{
+    border-bottom: 20px solid gray;
+    transition: 1s all;
+    text-decoration: none;
+    padding: 15px 32px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;   
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+
+    /*add effect when hover */
+  
+  div.button a:hover{
+    background-color: rgb(67, 2, 2);
+    padding-right:  40px; 
+
+    /*add >> after hover */
+  }
+  div.button span::after{
+    content:" \00bb";
+    opacity: 0;
+  }
+ div.button span:hover::after{
+  opacity:1;
+  color: white;
+  right: 0;
+ }
+
+ /*columns*/
+ div.col{
+  column-count: 3;
+  column-gap: 20px;
+  column-rule: 5px solid purple;
+  column-width:33%;
+ }
+
+ /*user interface (user, outline-offset) */
+ div.resize{
+  display: flex;
+  justify-content: center;
+  resize:both;
+  overflow: auto;
+  border: 5px solid black;
+ }
+ div.outline{
+  margin:50px;
+  border:2px solid black;
+  outline: 10px solid rgb(58, 5, 5);
+  outline-offset: 20px;
+ }
+
+/*Variables*/
+:root{
+  --dark-purple: rgb(58,5,5)
+}
+h4{
+  background-color: var(--dark-purple);
+}
+/*local variable*/
+h5{
+  --green: green;
+  background-color: var(--green);
+}
+
+/* @property  (variables in more secure way)*/
+@property --my-bg-color{
+  syntax: "<color>";
+  inherits: true;
+  initial-value: red;
+}
+div.property{
+  transition: all 0.5s;
+  --my-bg-color:blue;
+  background-color: var(--my-bg-color);
+  padding: 15px 15px;
+  cursor: pointer;
+}
+div.property:hover{
+  --my-bg-color: red
+}
+/*media queries */
+@media screen and (min-width:1000px){
+  body{
+    background-color: pink;
+  }
+}
 
 
 
